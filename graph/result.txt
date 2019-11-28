@@ -1,0 +1,101 @@
+graph vertex insertion ok: A
+graph vertex insertion ok: B
+graph vertex insertion ok: C
+graph vertex insertion ok: D
+graph vertex insertion ok: E
+graph vertex insertion ok: F
+graph vertex insertion failed: C already exist
+
+Graph's Vertex:
+ = vertex: A
+ = vertex: B
+ = vertex: C
+ = vertex: D
+ = vertex: E
+ = vertex: F
+
+graph vertex delete ok: B
+
+Graph's Vertex:
+ = vertex: A
+ = vertex: C
+ = vertex: D
+ = vertex: E
+ = vertex: F
+
+to_vertex B: not found
+graph arc insertion failed: A - >B
+graph vertex insertion ok: B
+graph arc insertion ok: A -> B
+graph arc insertion ok: B -> A
+graph arc insertion ok: B -> E
+graph arc insertion ok: E -> B
+graph arc insertion ok: B -> C
+graph arc insertion ok: C -> B
+graph arc insertion ok: C -> D
+graph arc insertion ok: D -> C
+graph arc insertion ok: C -> E
+graph arc insertion ok: E -> C
+graph arc insertion ok: D -> E
+graph arc insertion ok: E -> D
+graph arc insertion ok: E -> F
+graph arc insertion ok: F -> E
+
+Graph's Arc:
+Vertex : A
+         -> : B
+Vertex : C
+         -> : B
+         -> : D
+         -> : E
+Vertex : D
+         -> : C
+         -> : E
+Vertex : E
+         -> : B
+         -> : C
+         -> : D
+         -> : F
+Vertex : F
+         -> : E
+Vertex : B
+         -> : A
+         -> : E
+         -> : C
+
+graph vertex delete ok: B
+
+Graph's Arc:
+Vertex : A
+Vertex : C
+         -> : D
+         -> : E
+Vertex : D
+         -> : C
+         -> : E
+Vertex : E
+         -> : C
+         -> : D
+         -> : F
+Vertex : F
+         -> : E
+
+graph vertex delete ok: D
+
+Graph's Arc:
+Vertex : A
+Vertex : C
+         -> : E
+Vertex : E
+         -> : C
+         -> : F
+Vertex : F
+         -> : E
+
+graph vertex delete ok: E
+
+Graph's Arc:
+Vertex : A
+Vertex : C
+Vertex : F
+

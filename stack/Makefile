@@ -12,14 +12,14 @@ main.o: main.c
 
 
 all: ADT_stack.o main.o
-	g++ -o stack.exe main.o ADT_stack.o
+	g++ -o stack main.o ADT_stack.o
 
 run: all
-	stack.exe
+	./stack
 
 
 clean:
 	del *.o
 
 cleanup: clean
-	del *.exe
+	del *

@@ -1,8 +1,8 @@
 
  ## AVL_TREE
- * COME331001 Data structure, Fall 2016
+ * COME331 Data structure, Fall 2016
  * School of Electronics Engineering, Kyungpook National University
- * Instructor: Daejin Park
+
 
  #### left of left, right, of right, left of right, right of left balancing included.
 -------------------------------------------------------------------------------------- 
